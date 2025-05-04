@@ -4,6 +4,18 @@ import Image from "next/image"
 export function Hero() {
     return (
         <section className="bg-[#060505] text-white relative overflow-hidden">
+            <div>
+                <Image
+                    src={ImageCpp}
+                    alt='foto da CPP'
+                    fill
+                    sizes='100vw'
+                    priority
+                    className='object-cover opacity-60 lg:hidden'
+                />
+
+            </div>
+
             <div className='container mx-auto pt-16 pb-16 md:pb-16 px-4 relative'>
 
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
