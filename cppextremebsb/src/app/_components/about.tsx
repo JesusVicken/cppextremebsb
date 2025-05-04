@@ -62,8 +62,8 @@ export function About() {
                         <div className="flex flex-wrap gap-3">
                             <a
                                 target="_blank"
-                                href={`https://wa.me/5561981778422?text=Olá! Gostaria de saber mais sobre as aulas de Canoa Havaiana da CPP Extreme BSB.`}
-                                className="bg-black text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md hover:bg-gray-800 transition"
+                                href={`https://wa.me/5561998219177?text=Olá! Gostaria de saber mais sobre as aulas de Canoa Havaiana da CPP Extreme BSB.`}
+                                className="bg-green-600 text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md hover:bg-gray-800 transition"
                             >
                                 <WhatsappLogo className="w-5 h-5" />
                                 Contato via WhatsApp
@@ -75,7 +75,7 @@ export function About() {
                                 className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border border-black hover:bg-black hover:text-white transition"
                             >
                                 <MapPin className="w-5 h-5" />
-                                Local de Treinamento
+                                Local da Base CPP
                             </a>
                         </div>
                     </div>
