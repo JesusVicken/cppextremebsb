@@ -144,7 +144,7 @@ export function Services() {
                                                 className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded-md transition-all"
                                             >
                                                 <WhatsappLogo className="w-5 h-5" />
-                                                Contato
+                                                Bora Remar
                                             </a>
                                         </div>
                                     </article>
