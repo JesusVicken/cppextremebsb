@@ -38,7 +38,7 @@ export function About() {
                         <h2 className="text-4xl font-bold text-black">SOBRE NÓS</h2>
 
                         <p className="text-gray-700">
-                            Somos o <strong>CPP Extreme BSB</strong>, uma equipe apaixonada por canoa havaiana em Brasília!
+                            Somos o <strong>CPP Extreme Brasília</strong>, uma equipe apaixonada por canoa havaiana em Brasília!
                             Nosso propósito vai além da remada — promovemos bem-estar, conexão com a natureza e espírito de equipe.
                             Realizamos treinos para todos os níveis, desde iniciantes até atletas experientes, com foco na técnica, segurança e diversão.
                             As águas do Lago Paranoá são nosso templo, e a tradição polinésia, nossa inspiração.

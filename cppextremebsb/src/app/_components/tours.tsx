@@ -21,7 +21,7 @@ const services = [
     {
         title: "Aula Experimental Gratis",
         description: "Participação em uma aula introdutória com orientações básicas sobre remada, segurança e ambientação na canoa havaiana.",
-        duration: "1h",
+        duration: "Todos os dias da semana - 6:20, 7:40, 12:15 e 17:45",
         price: "Gratuito",
         icon: <Waves className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre a Aula Experimental e gostaria de mais informações."
@@ -29,7 +29,7 @@ const services = [
     {
         title: "Treinamento Regular",
         description: "Sessões de treino em grupo com foco em condicionamento físico, técnica de remada e resistência, voltado para iniciantes e intermediários.",
-        duration: "1h",
+        duration: "Todos os dias da Semana - 6:20, 7:40 e 17:45",
         price: "R$80/mês",
         icon: <Dumbbell className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Treinamento Regular e gostaria de mais informações."
@@ -37,7 +37,7 @@ const services = [
     {
         title: "Treinamento Avançado",
         description: "Treinos de alta performance voltados para atletas com experiência, com foco em provas de longa distância, velocidade e técnica refinada.",
-        duration: "1h30",
+        duration: "Qui - 6:20 | Sáb - 7:30",
         price: "R$120/mês",
         icon: <Trophy className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Treinamento Avançado e gostaria de mais informações."
@@ -45,7 +45,7 @@ const services = [
     {
         title: "Remada ao Nascer do Sol",
         description: "Remada especial ao amanhecer, com paisagem incrível e conexão com a natureza, ideal para iniciantes ou quem busca uma experiência única.",
-        duration: "1h",
+        duration: "Seg a Sex - 6:20",
         price: "R$50",
         icon: <Sunrise className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre a Remada ao Nascer do Sol e gostaria de mais informações."
@@ -53,7 +53,7 @@ const services = [
     {
         title: "Expedições",
         description: "Passeios programados em grupo por rotas especiais com paradas em pontos turísticos, ideal para aventura e contato com a natureza.",
-        duration: "3h",
+        duration: "Consultar disponibilidade",
         price: "R$150",
         icon: <Route className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Expedições e gostaria de mais informações."
@@ -61,7 +61,7 @@ const services = [
     {
         title: "Eventos Corporativos",
         description: "Atividades de integração para empresas com foco em trabalho em equipe, cooperação e superação em meio à natureza.",
-        duration: "2h",
+        duration: "Sob consulta",
         price: "Sob consulta",
         icon: <Handshake className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Eventos Corporativos e gostaria de mais informações."
@@ -69,7 +69,7 @@ const services = [
     {
         title: "Remada Noturna",
         description: "Experiência única de remar sob as estrelas, com todo o suporte e segurança. Ideal para quem busca algo fora do comum.",
-        duration: "1h",
+        duration: "Qui - 17:45",
         price: "R$60",
         icon: <Moon className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre a Remada Noturna e gostaria de mais informações."
@@ -77,7 +77,7 @@ const services = [
     {
         title: "Treino para Competições",
         description: "Programa de preparação física e técnica voltado especificamente para atletas que competem em provas nacionais ou internacionais.",
-        duration: "1h30",
+        duration: "Qui - 6:20 | Sáb - 7:30",
         price: "R$150/mês",
         icon: <Trophy className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Treino para Competições e gostaria de mais informações."
@@ -85,21 +85,24 @@ const services = [
     {
         title: "Condicionamento Funcional",
         description: "Sessões focadas no fortalecimento muscular, equilíbrio e preparo físico complementar à remada.",
-        duration: "45min",
+        duration: "Seg a Sex - horários variados",
         price: "R$70/mês",
         icon: <HeartPulse className="w-7 h-7" />,
         linkText: "Olá, vi no site sobre Condicionamento Funcional e gostaria de mais informações."
+    },
+    {
+        title: "Turma Kids",
+        description: "Remadas voltadas para o público infantil, com foco em segurança, diversão e iniciação ao esporte.",
+        duration: "Sábado - 11:30",
+        price: "Sob consulta",
+        icon: <HeartPulse className="w-7 h-7" />,
+        linkText: "Olá, vi no site sobre a Turma Kids e gostaria de mais informações."
     }
 ]
 
-export function Services() {
+export function Tours() {
     const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: false,
-        align: "start",
-        slidesToScroll: 1,
-        breakpoints: {
-            "(min-width: 768px)": { slidesToScroll: 3 }
-        }
+        loop: true,
     })
 
     function scrollPrev() {
@@ -111,16 +114,17 @@ export function Services() {
     }
 
     return (
-        <section className="bg-white py-8 md:py-16">
+        <section className="bg-black py-8 md:py-16">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-black mb-12 text-center">
-                    NOSSOS AULAS</h2>
+                <h2 className="text-4xl font-bold text-white mb-12 text-center">
+                    HORÁRIOS DE TREINOS E PASSEIOS
+                </h2>
 
-                <div className="relative">
+                <div className="relative max-w-4xl mx-auto">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {services.map((item, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
+                                <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
                                     <article className="bg-[#1e293b] text-white rounded-2xl p-6 h-full flex flex-col space-y-4">
                                         <div className="flex-1 flex items-start justify-between">
                                             <div className="flex gap-3">
