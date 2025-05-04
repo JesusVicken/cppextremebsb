@@ -1,6 +1,6 @@
 import Image from "next/image"
-import cpp1 from "../../../public/canoa2.jpg"
-import cpp2 from "../../../public/cpp.jpeg"
+import cpp1 from "../../../public/canoa1.jpg"
+import cpp2 from "../../../public/cpp2.jpeg"
 import { Check, MapPin } from "lucide-react"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
 
@@ -21,15 +21,17 @@ export function About() {
                             />
                         </div>
 
-                        <div className="absolute w-40 h-40 right-4 -bottom-8 rounded-lg overflow-hidden border-4 border-white">
+                        <div className="absolute w-40 h-40 right-4 -bottom-8 rounded-2xl overflow-hidden shadow-lg bg-white">
                             <Image
                                 src={cpp2}
                                 alt="Canoa havaiana no Lago Paranoá"
                                 fill
                                 quality={100}
+                                className="object-cover"
                                 priority
                             />
                         </div>
+
                     </div>
 
                     <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
@@ -44,15 +46,15 @@ export function About() {
 
                         <ul className="space-y-4">
                             <li className="flex items-center gap-2">
-                                <Check className="text-red-600" />
+                                <Check className="text-green-600" />
                                 Atividades para iniciantes e experientes
                             </li>
                             <li className="flex items-center gap-2">
-                                <Check className="text-red-600" />
+                                <Check className="text-green-600" />
                                 Aulas, treinos e passeios guiados no Lago Paranoá
                             </li>
                             <li className="flex items-center gap-2">
-                                <Check className="text-red-600" />
+                                <Check className="text-green-600" />
                                 Equipe de competição VA'A
                             </li>
                         </ul>

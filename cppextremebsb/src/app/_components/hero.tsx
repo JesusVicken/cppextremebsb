@@ -14,7 +14,7 @@ export function Hero() {
                     fill
                     sizes='100vw'
                     priority
-                    className='object-cover opacity-60 lg:hidden'
+                    className='object-cover opacity-60 lg:hidden '
                 />
                 <div className='absolute inset-0 bg-black opacity-20 md:hidden'></div>
             </div>
@@ -60,7 +60,7 @@ export function Hero() {
                         <Image
                             src={ImageCpp}
                             alt='logo CPP'
-                            className='object-contain'
+                            className='object-contain '
                             fill
                             sizes='(max-width: 760px) 0px, 50vw'
                             quality={100}
