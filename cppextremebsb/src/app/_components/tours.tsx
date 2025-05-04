@@ -23,6 +23,9 @@ import noiteImg from '../../../public/noite.jpg'
 import expImg from '../../../public/experimental.jpg'
 import remadaImg from '../../../public/remadalinda.jpg'
 import avancadoImg from '../../../public/avancado.jpg'
+import regularImg from '../../../public/regular.jpg'
+import coportaivoImg from '../../../public/corporativo.jpg'
+
 import Image from "next/image"
 
 const services = [
@@ -40,7 +43,7 @@ const services = [
         duration: "Todos os dias da Semana - 6:20, 7:40 e 17:45",
         icon: <Dumbbell className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre Treinamento Regular e gostaria de mais informações.",
-        image: canoa3Img
+        image: regularImg
     },
     {
         title: "Treinamento Avançado",
@@ -72,7 +75,7 @@ const services = [
         duration: "Sob consulta",
         icon: <Handshake className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre Eventos Corporativos e gostaria de mais informações.",
-        image: canoa3Img
+        image: coportaivoImg
     },
     {
         title: "Remada Noturna",
@@ -89,14 +92,6 @@ const services = [
         icon: <Trophy className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre Treino para Competições e gostaria de mais informações.",
         image: compImg
-    },
-    {
-        title: "Condicionamento Funcional",
-        description: "Sessões focadas no fortalecimento muscular, equilíbrio e preparo físico complementar à remada.",
-        duration: "Seg a Sex - horários variados",
-        icon: <HeartPulse className="w-6 h-6 text-white" />,
-        linkText: "Olá, vi no site sobre Condicionamento Funcional e gostaria de mais informações.",
-        image: canoa3Img
     },
     {
         title: "Turma Kids",
