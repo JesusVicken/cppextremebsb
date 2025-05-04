@@ -1,4 +1,3 @@
-
 "use client"
 
 import useEmblaCarousel from "embla-carousel-react"
@@ -114,14 +113,18 @@ export function Services() {
         <section className="bg-white py-8 md:py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-black mb-12 text-center">
-                    NOSSOS AULAS</h2>
+                    NOSSOS AULAS
+                </h2>
 
                 <div className="relative">
                     <div className="overflow-hidden" ref={emblaRef}>
                         <div className="flex">
                             {services.map((item, index) => (
                                 <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
-                                    <article className="bg-[#1e293b] text-white rounded-2xl p-6 h-full flex flex-col space-y-4">
+                                    <article
+                                        data-aos="fade-down"
+                                        className="bg-[#1e293b] text-white rounded-2xl p-6 h-full flex flex-col space-y-4"
+                                    >
                                         <div className="flex-1 flex items-start justify-between">
                                             <div className="flex gap-3">
                                                 <span>{item.icon}</span>
@@ -153,7 +156,6 @@ export function Services() {
                             ))}
                         </div>
                     </div>
-
 
                     <button
                         onClick={scrollPrev}
