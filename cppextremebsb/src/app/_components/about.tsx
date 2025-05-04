@@ -71,7 +71,7 @@ export function About() {
 
                             <a
                                 target="_blank"
-                                href="https://earth.google.com/web/@-15.821,-47.882,0a,22251752.77375655d,35y,0h,0t,0r"
+                                href="https://g.co/kgs/HvLkbqv"
                                 className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border border-black hover:bg-black hover:text-white transition"
                             >
                                 <MapPin className="w-5 h-5" />
