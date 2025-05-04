@@ -41,6 +41,7 @@ export function Hero() {
                                 <WhatsappLogo className='w-5 h-5' />
                                 Contato via WhatsApp
                             </a>
+                            
                         </div>
                         <div className="mt-8">
                             <p className="text-sm mb-4">
