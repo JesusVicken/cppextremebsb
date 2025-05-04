@@ -1,6 +1,9 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import ImageCpp from '../../../public/cpp.jpeg'
 import Image from "next/image"
+// import remoImg from "../../../public/remo.png"
+
+
 export function Hero() {
     return (
         <section className="bg-[#060505] text-white relative overflow-hidden">
@@ -13,7 +16,7 @@ export function Hero() {
                     priority
                     className='object-cover opacity-60 lg:hidden'
                 />
-
+                <div className='absolute inset-0 bg-black opacity-20 md:hidden'></div>
             </div>
 
             <div className='container mx-auto pt-16 pb-16 md:pb-16 px-4 relative'>
@@ -38,6 +41,18 @@ export function Hero() {
                         </div>
                         <div className="mt-8">
                             <p className="text-sm mb-4">Venha fazer sua aula experimental <b className="bg-white text-black px-2 py-1 rounded-md">gratuita</b></p>
+                            {/* <div className='flex justify-center mt-2'>
+                                <div className='relative w-24 h-24 md:w-32 md:h-32 lg:block'>
+                                    <Image
+                                        src={remoImg}
+                                        alt='remo'
+                                        className='object-contain'
+                                        fill
+                                        quality={100}
+                                        priority
+                                    />
+                                </div>
+                            </div> */}
                         </div>
                     </div>
 
