@@ -1,9 +1,9 @@
+
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
-import ImageCpp from '../../../public/cpp.jpeg'
+import cpp1 from "../../../public/canoa1.jpg"
 import Image from "next/image"
 
 export function Hero() {
-    // Mensagem pré-definida para o WhatsApp
     const whatsappMessage = encodeURIComponent(
         "Olá, visitei o site da CPP Extreme Brasília e gostaria de mais informações sobre as aulas de canoa havaiana!"
     )
@@ -12,8 +12,8 @@ export function Hero() {
         <section className="bg-[#060505] text-white relative overflow-hidden">
             <div>
                 <Image
-                    src={ImageCpp}
-                    alt='Foto da CPP'
+                    src={cpp1}
+                    alt='Foto da equipe CPP remando no Lago Paranoá'
                     fill
                     sizes='100vw'
                     priority
@@ -24,7 +24,8 @@ export function Hero() {
 
             <div className='container mx-auto pt-16 pb-16 md:pb-16 px-4 relative'>
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-                    <div className='space-y-6'>
+
+                    <div className='space-y-6' data-aos="fade-up">
                         <h1 className="text-3xl md:text-4xl font-bold leading-10">
                             CPP Extreme Brasília: Mais que Remo, é Estilo de Vida.
                         </h1>
@@ -41,7 +42,6 @@ export function Hero() {
                                 <WhatsappLogo className='w-5 h-5' />
                                 Contato via WhatsApp
                             </a>
-                            
                         </div>
                         <div className="mt-8">
                             <p className="text-sm mb-4">
@@ -50,17 +50,20 @@ export function Hero() {
                         </div>
                     </div>
 
-                    <div className='hidden md:block h-full relative'>
+                    <div
+                        className="hidden md:block relative w-full h-[400px] rounded-3xl overflow-hidden"
+                        data-aos="zoom-in"
+                    >
                         <Image
-                            src={ImageCpp}
-                            alt='Logo CPP'
-                            className='object-contain'
+                            src={cpp1}
+                            alt="Equipe CPP remando juntos"
                             fill
-                            sizes='(max-width: 760px) 0px, 50vw'
                             quality={100}
+                            className="object-cover hover:scale-110 duration-300"
                             priority
                         />
                     </div>
+
                 </article>
             </div>
         </section>

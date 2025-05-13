@@ -1,5 +1,5 @@
 import Image from "next/image"
-import cpp1 from "../../../public/canoa1.jpg"
+import cpp1 from "../../../public/cpp-sol.jpg"
 import cpp2 from "../../../public/cpp2.jpeg"
 import { Check, MapPin } from "lucide-react"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
@@ -9,7 +9,7 @@ export function About() {
         <section className="bg-white py-16 text-black">
             <div className="container px-4 mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div className="relative">
+                    <div className="relative" data-aos="fade-up-right" data-aos-delay="300">
                         <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
                             <Image
                                 src={cpp1}
@@ -58,6 +58,11 @@ export function About() {
                             </li>
                         </ul>
 
+                        <p className="text-gray-700">
+                            Deseja participar dos nossos <strong>grupos de passeios</strong> ou tirar dúvidas diretamente com a equipe?
+                            Utilize os botões abaixo para falar conosco ou entrar no grupo oficial de passeios da <strong>CPP Extreme BSB</strong>!
+                        </p>
+
                         <div className="flex flex-wrap gap-3">
                             <a
                                 target="_blank"
@@ -70,11 +75,11 @@ export function About() {
 
                             <a
                                 target="_blank"
-                                href="https://g.co/kgs/HvLkbqv"
-                                className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md border border-black hover:bg-black hover:text-white transition"
+                                href={`https://wa.me/5561998219177?text=Olá! Gostaria de saber mais sobre os passeios de Canoa Havaiana da CPP Extreme BSB.`}
+                                className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
                             >
-                                <MapPin className="w-5 h-5" />
-                                Local da Base CPP
+                                <WhatsappLogo className="w-5 h-5" />
+                                Grupo de Passeios
                             </a>
                         </div>
                     </div>

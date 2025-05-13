@@ -39,7 +39,7 @@ export default function Projects() {
         <section className="bg-white py-16 px-4">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-10">
-                    Projetos Sociais da CPP Extreme Brasília
+                    Projetos Sociais Apoiados pela CPP Extreme Brasília
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8">

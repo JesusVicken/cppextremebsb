@@ -9,10 +9,14 @@ import { Anchor } from 'lucide-react'
 
 import ondasupLogo from '../../../public/ondasup.jpg'
 import ascadeLogo from '../../../public/logo-ascade.png'
+import filhooosLogo from '../../../public/filhooos.jpg' // Nova imagem
+import canoMAMALogo from '../../../public/canoMAMAlogo.png' // Nova imagem
 
 const brands = [
   { name: 'Ondasup', logo: ondasupLogo },
   { name: 'Ascade', logo: ascadeLogo },
+  { name: 'Filhooos', logo: filhooosLogo }, // Novo parceiro
+  { name: 'CanoMAMA', logo: canoMAMALogo }, // Novo parceiro
 ]
 
 export function Footer() {
@@ -84,7 +88,7 @@ export function Footer() {
           {/* Contatos */}
           <div data-aos="flip-up">
             <h3 className="text-2xl font-semibold mb-2">Contatos</h3>
-            <p>Email: contato@cppextreme.com.br</p>
+            {/* <p>Email: contato@cppextreme.com.br</p> */}
             <p>Telefone: (61) 99821-9177</p>
             <p>Ascade - Associação dos Servidores da Câmara dos Deputados 📍 Brasília DF</p>
           </div>
