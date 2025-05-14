@@ -107,7 +107,7 @@ export function Tours() {
                     data-aos="fade-up"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        PASSEIOS E EVENTOS
+                        PASSEIOS E EXPERIÊNCIAS
                     </h2>
                     <p className="text-zinc-300 max-w-2xl mx-auto">
                         Confira nossos horários disponíveis e venha viver a experiência da canoa havaiana no Lago Paranoá!
