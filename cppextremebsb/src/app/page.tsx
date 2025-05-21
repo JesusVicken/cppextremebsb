@@ -6,22 +6,21 @@ import { Tours } from "./_components/tours"
 import { Footer } from "./_components/footer"
 import CheckVaa from "./_components/checkVaa"
 import { ParallaxWrapper } from "./_components/ParallaxWrapper"
+import FooterDev from "./_components/footer-dev"
 
 export default function Home() {
   return (
     <main>
-
       <ParallaxWrapper>
         <Projects />
       </ParallaxWrapper>
-
       <Hero />
       <About />
       <Tours />
       <Services />
       <CheckVaa />
-
       <Footer />
+      <FooterDev />
     </main>
   )
 }
