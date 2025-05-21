@@ -79,7 +79,7 @@ export function Hero() {
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Check className="text-green-600" />
-                                        Conectar corpo e respiração
+                                        Conectar com o corpo e respiração
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Check className="text-green-600" />
