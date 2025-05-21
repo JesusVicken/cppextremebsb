@@ -28,9 +28,9 @@ export function Hero() {
 
                     {/* Bloco de texto */}
                     <div className='space-y-6' data-aos="fade-up">
-                        {/* <h1 className="text-3xl md:text-4xl font-bold leading-10">
-                            CPP Extreme Brasília: bem estar através da conexão com a natureza.
-                        </h1> */}
+                        <h1 className="text-3xl md:text-4xl font-bold leading-10">
+                            CPP Extreme Brasilia: Canoa Polinesia é estilo de vida
+                        </h1>
 
                         {/* Tópicos em colunas */}
                         <div className="grid md:grid-cols-2 gap-6">
