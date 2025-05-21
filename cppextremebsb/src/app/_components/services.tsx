@@ -26,7 +26,7 @@ const weeklySchedule = [
     {
         day: "Terça-feira",
         description: "Treinos Regulares",
-        schedules: ["17:40"],
+        schedules: ["6:20", "7:40", "17:40" ],
         image: canoa2Img,
         linkText: "Olá, gostaria de informações sobre os treinos de Terça-feira"
     },
@@ -40,7 +40,7 @@ const weeklySchedule = [
     {
         day: "Quinta-feira",
         description: "Treinos Regulares + Competição",
-        schedules: ["17:40 (Regular)", "6:00 (Competição)"],
+        schedules: ["6:00 (Competição)", "7:40 (Regular)", "17:40 (Regular)" ],
         image: canoa5Img,
         linkText: "Olá, gostaria de informações sobre os treinos de Quinta-feira"
     },
@@ -54,7 +54,7 @@ const weeklySchedule = [
     {
         day: "Sábado",
         description: "Treinos + Turma Kids",
-        schedules: ["9:30 (Adulto)", "11:30 (Kids)"],
+        schedules: ["7:30 (Competição)", "9:30 (Regular)", "11:30 (Kids)"],
         image: canoa4Img,
         linkText: "Olá, gostaria de informações sobre os treinos de Sábado"
     }

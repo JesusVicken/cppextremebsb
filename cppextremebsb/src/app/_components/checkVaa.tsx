@@ -26,13 +26,16 @@ import { useWindowSize } from 'react-use'
 
 const checklistItems = [
     "Deixar o nome na portaria ao chegar",
-    "Ir para a beira lago (quase de frente às piscinas)",
-    "Garrafinha de água",
+    "Ir para a beira lago (BASE CPP - quase de frente às piscinas)",
+    "Guardar chinelas/mochilas na base/sala",
+    "Leve garrafinha de água",
     "Roupa confortável que possa molhar",
     "Roupa extra para trocar na volta",
     "Roupa de banho (opcional para pular no lago)",
     "Lembrar que a remada é feita descalço ou com sapatilha híbrida",
-    "Guardar chinelas/mochilas na base/sala",
+    "Escolher remo do tamanho ideal para você ",
+    "Vestir colete",
+    "Partiu remada! 🛶"
 ]
 
 export default function CheckVaa() {

@@ -23,7 +23,7 @@ export default function Projects() {
 
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center px-4">
-                    Entre no nosso grupo e fique por dentro da programação de passeios da CPP Extreme BSB
+                    Entre no nosso grupo e fique por dentro da programação de passeios e experiências do CPP Extreme BSB
                 </h2>
             </div>
         </div>

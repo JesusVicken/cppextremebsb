@@ -29,7 +29,7 @@ const services = [
     {
         title: "Remada ao Nascer do Sol",
         description: "Remada especial ao amanhecer, com paisagem incrível e conexão com a natureza, ideal para iniciantes ou quem busca uma experiência única.",
-        duration: "Seg a Sex - 6:20",
+        duration: "Sob Consulta",
         icon: <Sunrise className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre a Remada ao Nascer do Sol e gostaria de mais informações.",
         image: canoa3Img
@@ -43,20 +43,12 @@ const services = [
         image: expImg
     },
     {
-        title: "Eventos Corporativos",
-        description: "Atividades de integração para empresas com foco em trabalho em equipe, cooperação e superação em meio à natureza.",
+        title: "Saúde e Bem-estar Empresarial",
+        description: " Através de técnicas de respiração e balanço rítmico da canoa, sua equipe viverá uma experiencia rítmica e sincrónica, promovendo um funcionamento mais coeso e eficiente.",
         duration: "Sob consulta",
         icon: <Handshake className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre Eventos Corporativos e gostaria de mais informações.",
         image: coportaivoImg
-    },
-    {
-        title: "Turma Kids",
-        description: "Remadas voltadas para o público infantil, com foco em segurança, diversão e iniciação ao esporte.",
-        duration: "Sábado - 11:30",
-        icon: <Users className="w-6 h-6 text-white" />,
-        linkText: "Olá, vi no site sobre a Turma Kids e gostaria de mais informações.",
-        image: kidsImg
     },
     {
         title: "Remada da Lua Cheia",

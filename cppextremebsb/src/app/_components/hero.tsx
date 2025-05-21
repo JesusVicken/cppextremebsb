@@ -1,5 +1,5 @@
-
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
+import { Check } from "lucide-react"
 import cpp1 from "../../../public/canoa1.jpg"
 import Image from "next/image"
 
@@ -10,6 +10,7 @@ export function Hero() {
 
     return (
         <section className="bg-[#060505] text-white relative overflow-hidden">
+            {/* Imagem de fundo mobile */}
             <div>
                 <Image
                     src={cpp1}
@@ -22,17 +23,74 @@ export function Hero() {
                 <div className='absolute inset-0 bg-black opacity-20 md:hidden'></div>
             </div>
 
-            <div className='container mx-auto pt-16 pb-16 md:pb-16 px-4 relative'>
-                <article className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+            <div className='container mx-auto pt-16 pb-16 px-4 relative'>
+                <article className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
 
+                    {/* Bloco de texto */}
                     <div className='space-y-6' data-aos="fade-up">
-                        <h1 className="text-3xl md:text-4xl font-bold leading-10">
-                            CPP Extreme Brasília: Mais que Remo, é Estilo de Vida.
-                        </h1>
-                        <p className="lg:text-lg">
-                            Aulas de Canoa Havaiana para todos os níveis e passeios guiados pelo Lago Paranoá, conectando você à tradição polinésia e à natureza.
-                        </p>
-                        <div>
+                        {/* <h1 className="text-3xl md:text-4xl font-bold leading-10">
+                            CPP Extreme Brasília: bem estar através da conexão com a natureza.
+                        </h1> */}
+
+                        {/* Tópicos em colunas */}
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* O que oferecemos */}
+                            <div>
+                                <p className="text-base md:text-lg font-semibold mb-2">
+                                    O que oferecemos:
+                                </p>
+                                <ul className="text-sm md:text-base space-y-2">
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Remadas de canoa Polinésia (Havaiana)
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Desafios e Aventuras Extreme
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Experiências de Saúde e bem-estar
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Para quem é */}
+                            <div>
+                                <p className="text-base md:text-lg font-semibold mb-2">
+                                    Para pessoas que buscam:
+                                </p>
+                                <ul className="text-sm md:text-base space-y-2">
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Aprender a remar do zero
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Conectar com a natureza
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Sentir-se bem na água
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Sincronia em equipe
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Conectar corpo e respiração
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Check className="text-green-600" />
+                                        Se desafiar
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Botão WhatsApp */}
+                        <div className="mt-4">
                             <a
                                 href={`https://wa.me/5561998219177?text=${whatsappMessage}`}
                                 target="_blank"
@@ -43,13 +101,16 @@ export function Hero() {
                                 Contato via WhatsApp
                             </a>
                         </div>
-                        <div className="mt-8">
-                            <p className="text-sm mb-4">
+
+                        {/* Aula experimental */}
+                        <div className="mt-4">
+                            <p className="text-sm">
                                 Venha fazer sua aula experimental <b className="bg-white text-black px-2 py-1 rounded-md">gratuita</b>
                             </p>
                         </div>
                     </div>
 
+                    {/* Imagem lateral desktop */}
                     <div
                         className="hidden md:block relative w-full h-[400px] rounded-3xl overflow-hidden"
                         data-aos="zoom-in"
