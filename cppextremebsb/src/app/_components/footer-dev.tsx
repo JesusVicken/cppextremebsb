@@ -19,7 +19,7 @@ export default function FooterDev() {
                         href="https://instagram.com/v1ccken"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 hover:opacity-90 transition-transform hover:scale-105 animate-pulse-mobile"
+                        className="flex items-center gap-1 hover:opacity-90 transition-transform hover:scale-105"
                     >
                         <span className="font-semibold">@v1ccken</span>
                         <InstagramIcon />
@@ -33,7 +33,7 @@ export default function FooterDev() {
 function InstagramIcon() {
     return (
         <svg
-            className="w-4 h-4 transition-transform hover:scale-110 animate-pulse-mobile"
+            className="w-4 h-4 transition-transform hover:scale-110"
             viewBox="0 0 24 24"
         >
             <defs>
@@ -48,33 +48,6 @@ function InstagramIcon() {
                 fill="white"
                 d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1 1 0 100 2 1 1 0 000-2z"
             />
-            <style>
-                {`
-          @media (max-width: 640px) {
-            .animate-pulse-mobile {
-              animation: pulseShadow 2s infinite;
-            }
-
-            @keyframes pulseShadow {
-              0% {
-                filter: drop-shadow(0 0 2px #feda75);
-              }
-              25% {
-                filter: drop-shadow(0 0 4px #fa7e1e);
-              }
-              50% {
-                filter: drop-shadow(0 0 6px #d62976);
-              }
-              75% {
-                filter: drop-shadow(0 0 4px #962fbf);
-              }
-              100% {
-                filter: drop-shadow(0 0 2px #feda75);
-              }
-            }
-          }
-        `}
-            </style>
         </svg>
     );
 }
