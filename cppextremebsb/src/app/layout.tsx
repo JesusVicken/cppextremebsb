@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { AosInit } from "./_components/aos-init"
 import { ParallaxWrapper } from "./_components/ParallaxWrapper"
-import Whatsapp from "./_components/whatsapp";
 
 
 const geistSans = Geist({
@@ -34,7 +33,6 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ParallaxWrapper>
           {children}
-          <Whatsapp />
           <AosInit />
         </ParallaxWrapper>
       </body>

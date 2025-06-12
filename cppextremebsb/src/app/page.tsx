@@ -1,3 +1,4 @@
+// app/page.tsx
 import { About } from "./_components/about"
 import { Hero } from "./_components/hero"
 import Projects from "./_components/projects"
@@ -7,6 +8,7 @@ import { Footer } from "./_components/footer"
 import CheckVaa from "./_components/checkVaa"
 import { ParallaxWrapper } from "./_components/ParallaxWrapper"
 import FooterDev from "./_components/footer-dev"
+import WhatsappWrapper from "./_components/whatsapp-wrapper"
 
 export default function Home() {
   return (
@@ -16,11 +18,15 @@ export default function Home() {
       </ParallaxWrapper>
       <Hero />
       <About />
-      <Tours />
-      <Services />
-      <CheckVaa />
-      <Footer />
-      <FooterDev />
+
+      {/* Envolve apenas os componentes que devem ter o botão do WhatsApp */}
+      <WhatsappWrapper>
+        <Tours />
+        <Services />
+        <CheckVaa />
+        <Footer />
+        <FooterDev />
+      </WhatsappWrapper>
     </main>
   )
 }
