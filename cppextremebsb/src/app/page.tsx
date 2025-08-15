@@ -9,6 +9,8 @@ import CheckVaa from "./_components/checkVaa"
 import { ParallaxWrapper } from "./_components/ParallaxWrapper"
 import FooterDev from "./_components/footer-dev"
 import WhatsappWrapper from "./_components/whatsapp-wrapper"
+import { ImageTransition } from "./_components/ImageTransition"
+
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
       </ParallaxWrapper>
       <Hero />
       <About />
+      <ImageTransition /> 
 
       {/* Envolve apenas os componentes que devem ter o botão do WhatsApp */}
       <WhatsappWrapper>

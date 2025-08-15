@@ -102,10 +102,10 @@ export function Hero() {
                             </a>
                         </div>
 
-                        {/* Aula experimental */}
+                        Aula experimental
                         <div className="mt-4">
                             <p className="text-sm">
-                                Venha fazer sua aula experimental <b className="bg-white text-black px-2 py-1 rounded-md">gratuita</b>
+                                Venha fazer sua aula <b className="bg-white text-black px-2 py-1 rounded-md">experimental</b>
                             </p>
                         </div>
                     </div>
