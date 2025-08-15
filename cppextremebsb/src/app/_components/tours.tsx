@@ -26,14 +26,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 const services = [
-    {
-        title: "Remada ao Nascer do Sol",
-        description: "Remada especial ao amanhecer, com paisagem incrível e conexão com a natureza, ideal para iniciantes ou quem busca uma experiência única.",
-        duration: "Sob Consulta",
-        icon: <Sunrise className="w-6 h-6 text-white" />,
-        linkText: "Olá, vi no site sobre a Remada ao Nascer do Sol e gostaria de mais informações.",
-        image: canoa3Img
-    },
+    
     {
         title: "Expedições e Viajens",
         description: "Passeios programados em grupo por rotas especiais com paradas em pontos turísticos, ideal para aventura e contato com a natureza.",
@@ -41,6 +34,14 @@ const services = [
         icon: <Route className="w-6 h-6 text-white" />,
         linkText: "Olá, vi no site sobre Expedições e gostaria de mais informações.",
         image: expImg
+    },
+    {
+        title: "Remada ao Nascer do Sol",
+        description: "Remada especial ao amanhecer, com paisagem incrível e conexão com a natureza, ideal para iniciantes ou quem busca uma experiência única.",
+        duration: "Sob Consulta",
+        icon: <Sunrise className="w-6 h-6 text-white" />,
+        linkText: "Olá, vi no site sobre a Remada ao Nascer do Sol e gostaria de mais informações.",
+        image: canoa3Img
     },
     {
         title: "Saúde e Bem-estar Empresarial",
