@@ -7,15 +7,13 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import { Anchor } from 'lucide-react'
 
-import ondasupLogo from '../../../public/ondasup.jpg'
 import ascadeLogo from '../../../public/logo-ascade.png'
-import filhooosLogo from '../../../public/filhooos.jpg' // Nova imagem
-import canoMAMALogo from '../../../public/canoMAMAlogo.png' // Nova imagem
+// import filhooosLogo from '../../../public/filhooos.jpg' 
+import canoMAMALogo from '../../../public/canoMAMAlogo.png'
 
 const brands = [
-  { name: 'Ondasup', logo: ondasupLogo },
   { name: 'Ascade', logo: ascadeLogo },
-  { name: 'Filhooos', logo: filhooosLogo }, // Novo parceiro
+  // { name: 'Filhooos', logo: filhooosLogo }, 
   { name: 'CanoMAMA', logo: canoMAMALogo }, // Novo parceiro
 ]
 
@@ -38,7 +36,7 @@ export function Footer() {
         >
           <h4 className="text-4xl font-semibold mb-12 text-center flex items-center justify-center gap-3">
             <Anchor className="w-8 h-8" />
-            Nossos Parceiros
+            Nossos Parceiros e Contato
           </h4>
 
           <div className="flex flex-wrap justify-center gap-8">
@@ -80,7 +78,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <WhatsappLogo className="w-5 h-5" />
+              <WhatsappLogo className="w-5 h-5 text-white" />
               Contato via WhatsApp
             </a>
           </div>
@@ -102,21 +100,21 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FacebookLogo className="w-8 h-8" />
+                <FacebookLogo className="w-8 h-8 text-[#1877F2]" /> {/* Azul oficial Facebook */}
               </a>
               <a
                 href="https://www.instagram.com/cppextremebsb/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <InstagramLogo className="w-8 h-8" />
+                <InstagramLogo className="w-8 h-8 text-[#E4405F]" /> {/* Rosa/roxo oficial Instagram */}
               </a>
               <a
                 href="https://www.youtube.com/@cppextreme"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <YoutubeLogo className="w-8 h-8" />
+                <YoutubeLogo className="w-8 h-8 text-[#FF0000]" /> {/* Vermelho oficial YouTube */}
               </a>
             </div>
           </div>
