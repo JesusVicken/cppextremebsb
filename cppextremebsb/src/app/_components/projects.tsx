@@ -1,3 +1,6 @@
+
+
+
 'use client'
 
 import { Parallax } from 'react-scroll-parallax'
@@ -5,8 +8,8 @@ import { WhatsappLogo } from '@phosphor-icons/react'
 
 export default function Projects() {
     return (
-        <div
-            className="relative h-[700px] md:h-[800px] lg:h-[900px] overflow-hidden"
+        <section
+            className="relative h-screen w-full overflow-hidden"
             data-aos="fade-up"
         >
             {/* Background em vídeo */}
@@ -27,8 +30,9 @@ export default function Projects() {
                 data-aos="fade-up"
                 data-aos-delay="300"
             >
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center max-w-3xl px-4">
-                    Entre no nosso grupo e fique por dentro da programação de passeios e experiências do CPP Extreme BSB
+                <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center max-w-3xl px-4">
+                    Entre no nosso grupo e fique por dentro da programação de
+                    passeios e experiências do CPP Extreme BSB
                 </h2>
 
                 {/* Botão para entrar no grupo do WhatsApp */}
@@ -49,6 +53,6 @@ export default function Projects() {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -21,8 +21,6 @@ export default function Home() {
       <Hero />
       <About />
       <ImageTransition /> 
-
-      {/* Envolve apenas os componentes que devem ter o botão do WhatsApp */}
       <WhatsappWrapper>
         <Tours />
         <Services />
